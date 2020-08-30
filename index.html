@@ -1,0 +1,309 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Materialize css</title>
+    <style>
+      header {
+        background: url(img/banner.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      .section {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
+      @media screen and (max-width: 670px) {
+        header {
+          min-height: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="nav-wrapper red lighten-2">
+        <div class="container">
+          <a href="#" class="brand-logo">GAMES</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#register">Register</a></li>
+          </ul>
+          <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- photo / grid -->
+    <section class="container section" id="photos">
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/gow1.jpg" alt="" class="responsive-img materialboxed" />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">GOW War Magic</h2>
+          <p>
+            Thanos is a fictional supervillain appearing in American comic books
+            published by Marvel Comics. The character was created by
+            writer-artist Jim Starlin, and made his first appearance in The
+            Invincible Iron Man #55 Drax the Destroyer kills Thanos before he
+            can do so but discovers that Thanos had placed a failsafe device to
+            allow Silver Surfer to free Galactus in the event that Annihilus
+            betrayed him
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+          <img
+            src="img/thanos.jpg"
+            alt=""
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 pull-l5 right-align offset-l1">
+          <h2 class="indigo-text text-darken-4">Thanos Magic</h2>
+          <p>
+            Thanos is a fictional supervillain appearing in American comic books
+            published by Marvel Comics. The character was created by
+            writer-artist Jim Starlin, and made his first appearance in The
+            Invincible Iron Man #55 Drax the Destroyer kills Thanos before he
+            can do so but discovers that Thanos had placed a failsafe device to
+            allow Silver Surfer to free Galactus in the event that Annihilus
+            betrayed him
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="img/gow2.jpg" alt="" class="responsive-img materialboxed" />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">GOW Power Magic</h2>
+          <p>
+            Thanos is a fictional supervillain appearing in American comic books
+            published by Marvel Comics. The character was created by
+            writer-artist Jim Starlin, and made his first appearance in The
+            Invincible Iron Man #55 Drax the Destroyer kills Thanos before he
+            can do so but discovers that Thanos had placed a failsafe device to
+            allow Silver Surfer to free Galactus in the event that Annihilus
+            betrayed him
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax -->
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/gamming1.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+    <!-- services / tabs -->
+    <section class="container section" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do</h2>
+          <p>
+            The character was created by writer-artist Jim Starlin, and made his
+            first appearance in The Invincible Iron Man #55 Drax
+          </p>
+          <p>
+            The character was created by writer-artist Jim Starlin, and made his
+            first appearance in The Invincible Iron Man #55 Drax
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#popular" class="indigo-text text-darken-4">Popular</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#latest" class="indigo-text text-darken-4">Latest</a>
+            </li>
+          </ul>
+          <div class="col s12">
+            <p class="flow-text indigo-text text-darken-4" id="popular">
+              Popular
+            </p>
+            <p>
+              The character was created by writer-artist Jim Starlin, and made
+              his first appearance in The Invincible Iron Man #55 Drax
+            </p>
+          </div>
+          <div class="col s12">
+            <p class="flow-text indigo-text text-darken-4" id="latest">
+              Latest
+            </p>
+            <p>
+              The character was created by writer-artist Jim Starlin, and made
+              his first appearance in The Invincible Iron Man #55 Drax
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/gamming2.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="section container scrollspy" id="register">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get In touch</h2>
+          <p>
+            The character was created by writer-artist Jim Starlin, and made his
+            first appearance in The Invincible Iron Man #55 Drax
+          </p>
+          <p>
+            The character was created by writer-artist Jim Starlin, and made his
+            first appearance in The Invincible Iron Man #55 Drax
+          </p>
+          <p>
+            The character was created by writer-artist Jim Starlin, and made his
+            first appearance in The Invincible Iron Man #55 Drax
+          </p>
+          <p>
+            The character was created by writer-artist Jim Starlin, and made his
+            first appearance in The Invincible Iron Man #55 Drax
+          </p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <h2 class="indigo-text text-darken-4">Register here</h2>
+          <form action="">
+            <div class="input-field">
+              <input type="text" name="name" id="name" />
+              <label for="name">your name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" />
+              <label for="email">your email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" name="name" id="mobile-no" />
+              <label for="mobile-no">your mobile number</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="date" class="datepicker" />
+              <label for="date">Enter your DOB</label>
+            </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l3">
+            <h5 class="center-align">GAMES</h5>
+            <div class="center-align">
+              <br />
+              <p>this is 1st game god of war</p>
+              <p>this is 2nd game clash ofclans</p>
+              <p>this is 3rd game pubg real</p>
+              <p>this is 4th gamedon no2</p>
+              <p>this is 5th game cool thingh</p>
+            </div>
+          </div>
+          <div class="col s12 l3 offset-l2">
+            <h5 class="center-align">Whats New</h5>
+            <br />
+            <div class="center-align">
+              <p>Doom</p>
+              <p>Grand theft auto</p>
+              <p>bloodbiim</p>
+              <p>god of war 6</p>
+              <p>person5</p>
+            </div>
+          </div>
+          <div class="col s12 l3 offset-l1">
+            <h5 class="center-align">Connect</h5>
+            <br />
+            <ul class="center-align">
+              <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+              <li>
+                <br />
+                <a href="#" class="grey-text text-lighten-3">Instagram</a>
+              </li>
+              <br />
+              <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+              <li>
+                <br />
+                <a href="#" class="grey-text text-lighten-3">Pinterest</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; 2020 game copyright</div>
+      </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $(".materialboxed").materialbox();
+        $(".parallax").parallax();
+        $(".tabs").tabs();
+        $(".datepicker").datepicker();
+        $(".scrollspy").scrollSpy();
+      });
+    </script>
+  </body>
+</html>
